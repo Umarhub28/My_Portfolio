@@ -79,23 +79,6 @@ const projects = [
             dev4
         ],
         description: [
-            "Designed and developed a responsive, user-friendly personal finance website ensuring it works smoothly across all devices and modern browsers.",
-            "Tested the website thoroughly to identify and fix layout bugs, and implemented performance optimizations for fast UI rendering.",
-            "Ensured secure data handling by integrating REST APIs with built-in authentication using Spring Boot and MySQL."
-        ]
-    },
-    {
-        title: "DevMatch",
-        type: "Mutual Skill-Swap Platform",
-        tech: ["JavaScript", "Tailwind CSS", "REST APIs", "Docker", "Render", "Figma"],
-        github: "https://github.com/Umarhub28/wexa-graph-app-assignment-",
-        images: [
-            dev1,
-            dev2,
-            dev3,
-            dev4
-        ],
-        description: [
             "Developed an intuitive website UI using Tailwind CSS, JavaScript, and Figma for wireframing, focusing on a seamless user experience.",
             "Troubleshot and debugged complex REST API integrations to ensure reliable data flow and optimal website performance.",
             "Handled the end-to-end deployment process using Docker and Render, maintaining post-launch stability."
@@ -371,7 +354,7 @@ export default function Portfolio() {
                         </div>
                     </RevealOnScroll>
 
-                        <div className="space-y-16">
+                    <div className="space-y-16">
                         {projects.map((project, idx) => (
                             <RevealOnScroll key={idx}>
                                 <div className="group border border-blue-100/50 bg-white/60 backdrop-blur-sm rounded-3xl p-8 hover:border-blue-200 hover:bg-white shadow-sm hover:shadow-xl transition-all duration-500">
@@ -495,7 +478,7 @@ export default function Portfolio() {
                                 <a href={`mailto:${personalInfo.email}`} className="flex items-center justify-center md:justify-start gap-3 hover:text-blue-400 transition-colors group">
                                     <Mail className="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors" /> {personalInfo.email}
                                 </a>
-                                <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`} className="flex items-center justify-center md:justify-start gap-3 hover:text-blue-400 transition-colors group">
+                                <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`} className="files items-center justify-center md:justify-start gap-3 hover:text-blue-400 transition-colors group">
                                     <Phone className="w-5 h-5 text-slate-500 group-hover:text-blue-400 transition-colors" /> {personalInfo.phone}
                                 </a>
                                 <div className="flex items-center justify-center md:justify-start gap-3">
